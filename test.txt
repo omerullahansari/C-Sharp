@@ -1,0 +1,50 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication14
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter Your Salary 1: ");
+            int input1 = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Enter Your Salary 2: ");
+            int input2 = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Enter Your Salary 3: ");
+            int input3 = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Enter Your Salary 4: ");
+            int input4 = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Enter Your Salary 5: ");
+            int input5 = Int32.Parse(Console.ReadLine());
+            if (input1 >= 50000 && input1 <= 200000 && input2 >= 50000 && input2 <= 200000 && input3 >= 50000 && input3 <= 200000 && input4 >= 50000 && input4 <= 200000 && input5 >= 50000 && input5 <= 200000)
+            {
+                if(input1 > input2){
+                    Console.WriteLine("1st highest salary as manager");
+                }
+                else if(input2 > input3){
+                    Console.WriteLine("2st highest salary as assi manager");
+                }
+                else if(input3 > input4){
+                    Console.WriteLine("3st highest salary as team lead");
+                }
+
+                else if(input4 > input5){
+                    Console.WriteLine("4st highest salary as senior developer");
+                }
+
+                else(input5 > input1){
+                    Console.WriteLine("5st highest salary as developer");
+                }
+
+            }
+            else {
+                Console.WriteLine("Invalid Salary Min 50000 Max 200000");
+            }
+            Console.ReadKey();
+        }
+    }
+}
