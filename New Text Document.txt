@@ -1,0 +1,86 @@
+65584
+omerullah Ansari
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication22
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Input The 1 Value");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Input The 2 Value");
+            int b = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Input The 3 Value");
+            int c = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Input The 4 Value");
+            int d = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Input The 5 Value");
+            int e = Convert.ToInt32(Console.ReadLine());
+            if (a >=200 && a <=1000 && b >=200 && b <=1000 && c >=200 && c <=1000 && d >=200 && d <=1000 && e >=200 && e <=1000)
+            {
+
+                if (a > b && a > c && a > d && a > e)
+                {
+                    Console.WriteLine("max" + a);
+                }
+                else if (b> a && b > c && b > d && b > e)
+                {
+                    Console.WriteLine("max" + a);
+                }
+                else if (c > a && c > b && c > d && c > e)
+                {
+                    Console.WriteLine("max" + a);
+                }
+                else if (d > a && d > b && d > c && d > e)
+                {
+                    Console.WriteLine("max" + a);
+                }
+                else if (e > a && e > b && e > c && e > d)
+                {
+                    Console.WriteLine("max" + a);
+                }
+                else
+                {
+                    Console.WriteLine("error");
+                }
+
+                if (a < b && a < c && a < d && a < e)
+                {
+                    Console.WriteLine("min" + a);
+                }
+                else if (b < a && b < c && b < d && b < e)
+                {
+                    Console.WriteLine("min" + a);
+                }
+                else if (c < a && c < b && c < d && c < e)
+                {
+                    Console.WriteLine("min" + a);
+                }
+                else if (d < a && d < b && d < c && d < e)
+                {
+                    Console.WriteLine("min" + a);
+                }
+                else if (e < a && e < b && e < c && e < d)
+                {
+                    Console.WriteLine("min" + a);
+                }
+                else
+                {
+                    Console.WriteLine("error");
+                }
+                
+            }
+            else {
+                Console.WriteLine("Error Plz Enter the value again");
+            }
+            Console.ReadKey();
+
+        }
+    }
+}
