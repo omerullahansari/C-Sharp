@@ -1,0 +1,53 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp5
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter Days In English");
+            for (int i = 1; i <= 7; i++)
+            {
+                string data = Console.ReadLine();
+                if (data == "monday")
+                {
+                    Console.WriteLine(data + " is the 1 day of Week");
+                }
+                else if (data == "tuesday")
+                {
+                    Console.WriteLine(data + " is the 2 day of Week");
+                }
+                else if (data == "wednesday")
+                {
+                    Console.WriteLine(data + " is the 3 day of Week");
+                }
+                else if (data == "thursday")
+                {
+                    Console.WriteLine(data + " is the 4 day of Week");
+                }
+                else if (data == "friday")
+                {
+                    Console.WriteLine(data + " is the 5 day of Week");
+                }
+                else if (data == "saturday")
+                {
+                    Console.WriteLine(data + " is the 6 day of Week");
+                }
+                else if (data == "sunday")
+                {
+                    Console.WriteLine(data + " is the 7 day of Week");
+                }
+                else
+                {
+                    Console.WriteLine("Input Error");
+                }
+            }
+            Console.ReadKey();
+        }
+    }
+}
